@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>calculadora</title>
+</head>
+<body>
+  <div class="calculadora">
+    <div class="display">
+      <p id="resultado">0</p>
+    </div>
+    <div class="botoes">
+      <!-- botões numéricos -->
+      <button class="numero" onclick="addDigito('7')">7</button>
+      <button class="numero" onclick="addDigito('8')">8</button>
+      <button class="numero" onclick="addDigito('9')">9</button>
+      <!-- botão de adição -->
+      <button class="operacao" onclick="addDigito('+')">+</button>
+      <!-- botões numéricos -->
+      <button class="numero" onclick="addDigito('4')">4</button>
+      <button class="numero" onclick="addDigito('5')">5</button>
+      <button class="numero" onclick="addDigito('6')">6</button>
+      <!-- botão de subtração -->
+      <button class="operacao" onclick="addDigito('-')">-</button>
+      <!-- botões numéricos -->
+      <button class="numero" onclick="addDigito('1')">1</button>
+      <button class="numero" onclick="addDigito('2')">2</button>
+      <button class="numero" onclick="addDigito('3')">3</button>
+      <!-- botão de multiplicação -->
+      <button class="operacao" onclick="addDigito('*')">*</button>
+      <!-- botões de limpar e apagar -->
+      <button class="limpar" onclick="apagarDisplay()">C</button>
+      <button class="numero" onclick="addDigito('0')">0</button>
+      <button class="delete" onclick="deleteDigito()">←</button>
+      <!-- botão de divisão -->
+      <button class="operacao" onclick="addDigito('/')">/</button>
+      <!-- botão de igual -->
+      <button class="calcular" onclick="calcular()">=</button>
+    </div>
+  </div>
+<script src="../javascript/script.js"></script>
+</body>
+</html>

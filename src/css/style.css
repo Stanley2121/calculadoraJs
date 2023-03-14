@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    /*deixar não selecionável*/
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+  }
+
+  .calculadora {
+    background-color: #232323;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .display {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .display p {
+    color: #fff;
+    font-size: 24px;
+    text-align: right;
+    margin: 0;
+  }
+  
+  .botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .numero, .operacao, .limpar, .delete, .calcular {
+    background-color: #444;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .numero:hover, .operacao:hover, .limpar:hover, .delete:hover, .calcular:hover {
+    background-color: #555;
+  }
+  
+  .operacao, .limpar, .delete, .calcular {
+    background-color: #ff9500;
+  }
+  
+  .operacao:hover, .limpar:hover, .delete:hover, .calcular:hover {
+    background-color: #ffa657;
+  }
+  
+  .limpar {
+    grid-column: 1 / span 1;
+  }
+  
+  .delete {
+    grid-column: 3 / span 1;
+  }
+  
+  .calcular {
+    grid-row: 5;
+    grid-column: 3 / span 2;
+  }
